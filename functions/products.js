@@ -14,7 +14,7 @@ exports.handler = async (event, context) => {
         id,
         fields: {
           name,
-          image,
+          images,
           description,
           company,
           category,
@@ -24,7 +24,7 @@ exports.handler = async (event, context) => {
           featured,
         },
       } = p;
-      const url = image[0].url;
+      const url = images[0].url;
       return {
         id,
         name,
